@@ -1,0 +1,14 @@
+ines (10 sloc)  320 Bytes
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>This page uses data from the calling function. The value of variable testtext is {{ testtext }}</p>
+<p>We also loop over the list testlist ({{ testlist }}) here:</p>
+<ul>
+    {% for value in testlist %}
+        <li>{{ value }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
