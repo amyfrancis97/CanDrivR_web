@@ -49,8 +49,11 @@ aria-expanded="false" aria-label="Toggle navigation">
         </div>
       </div>
     </nav>
-    <img style="max-width: 20%; height: auto; vertical-align: bottom;" src="{{url_for('static', filename='images/CRUK.png')}}" 
-class="rounded float-start">
-    <img src="{{url_for('static', filename='images/ieu-logo.png')}}" class="rounded float-center">
-    <img src="{{url_for('static', filename='images/University_of_Bristol-logo.png')}}" class="rounded float-end">
-    </body>
+    <footer class="fixed-bottom" style="border-top: 1px solid #ddd; padding: 10px">
+      <div class="row">
+        <div class="col-sm"><img src="{{url_for('static', filename='images/CRUK.png')}}" style="height: 70px;"></div>
+        <div class="col-sm"><img src="{{url_for('static', filename='images/ieu-logo.png')}}" style="height: 70px;"></div>
+        <div class="col-sm"><img src="{{url_for('static', filename='images/University_of_Bristol-logo.png')}}" style="height: 70px;"></div>
+      </div>
+  </footer>
+  </body>
