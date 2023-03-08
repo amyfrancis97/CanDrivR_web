@@ -17,8 +17,15 @@ def test_page():
 
 @app.route("/CanDrivR")
 def CanDrivR_page():
-    return render_template("CanDrivR.html", testtext = "Hello", testlist = [1,2,3])
+    return render_template("CanDrivR.html")
 
+@app.route("/About")
+def About_page():
+    return render_template("About.html")
+
+@app.route("/downloads")
+def downloads_page():
+    return render_template("downloads.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=8080)
