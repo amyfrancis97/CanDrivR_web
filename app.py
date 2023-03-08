@@ -15,6 +15,11 @@ def favicon():
 def test_page():
     return render_template("testpage.html", testtext = "Hello", testlist = [1,2,3])
 
+@app.route("/CanDrivR")
+def CanDrivR_page():
+    return render_template("CanDrivR.html", testtext = "Hello", testlist = [1,2,3])
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=8080)
 
